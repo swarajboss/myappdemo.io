@@ -1,0 +1,42 @@
+<!-- <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/">E-Com Product List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cart">Go to Cart</a>
+          </li>
+        </ul>
+        <form class="form-inline m-2 my-lg-0 flex-nowrap">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for brands, products"
+            aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+</header> -->
+
+<div class="headers-top">
+  <div class="row mx-2 backk">
+    <div class="col-md-4 col-sm-12 py-2 align-center">
+      <a class="navbar-brand" routerLink="/">E-Com Product List</a>
+      <a class="navbar-brand mx-3" routerLink="/">Home</a>
+    </div>
+    <div class="col-md-4 col-sm-12 py-2 align-center">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search for brands, products" aria-label="Search">
+    </div>
+    <div class="col-md-4 col-sm-12 py-2 align-center float-end " *ngIf="showCart">
+      <button class="btn btn-primary gocart px-2" routerLink="/cart"> Go to Cart
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>
